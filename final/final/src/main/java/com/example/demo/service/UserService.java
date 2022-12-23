@@ -1,9 +1,15 @@
 package com.example.demo.service;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
-import com.example.demo.entity.User
+import com.example.demo.entity.User;
+
+import java.util.List;
+import java.util.Optional;
+
 public interface UserService extends UserDetailsService {
-    public User guardar(User user);
+    public static User guardar(User user) {
+        return null;
+    }
 
     public List<User> listarUsuarios();
 
